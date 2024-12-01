@@ -1,10 +1,10 @@
 # 🧮 Matriz e Transposta em C
 
-Este programa em C permite ao usuário preencher uma matriz de **3 linhas e 2 colunas** com números **flutuantes** (float). Após preencher a matriz, o programa exibe a **matriz original** e sua **matriz transposta**, ou seja, as linhas são trocadas por colunas. 🔄
+Este programa em C permite ao usuário preencher uma matriz de **quantidade variável de linhas e colunas** (máximo de 10x10) com números **flutuantes** (float). Após preencher a matriz, o programa exibe a **matriz original** e sua **matriz transposta**, ou seja, as linhas são trocadas por colunas. 🔄
 
 ## Funcionalidades ✨
 
-- **Preenchimento da Matriz**: O usuário insere os valores para uma matriz 3x2. 📝
+- **Preenchimento da Matriz**: O usuário insere os valores para uma matriz de até 10 linhas e 10 colunas. 📝
 - **Exibição da Matriz Original**: A matriz preenchida é exibida no formato de tabelas. 📊
 - **Exibição da Matriz Transposta**: As linhas e colunas da matriz são invertidas para mostrar sua transposta. 🔄
 
@@ -12,30 +12,36 @@ Este programa em C permite ao usuário preencher uma matriz de **3 linhas e 2 co
 
 1. Clone este repositório:
   
+
     git clone https://github.com/paulo-vinicius-sousa-lima/matriz-e-transposta-em-c.git
-    
+
 
 2. Navegue até a pasta do projeto:
    
+
     cd matriz-e-transposta-em-c
- 
+
 
 3. Compile o programa:
     
+
     gcc -o programa programa.c
-  
+
 
 4. Execute o programa:
   
+ 
     ./programa
-   
 
-5. Insira os valores da matriz conforme solicitado. O programa exibirá a matriz original e a transposta.
+
+5. Insira o número de linhas e colunas da matriz (máximo de 10x10). Em seguida, insira os valores da matriz conforme solicitado. O programa exibirá a matriz original e a transposta.
 
 ## Exemplo 💡
 
 Entrada:
 
+Determine o a quantidade de linhas da matriz (maximo = 10): 3
+Determine o a quantidade de colunas da matriz (maximo = 10): 2
 matriz[0][0] = 1.2
 matriz[0][1] = 2.3
 matriz[1][0] = 3.4
