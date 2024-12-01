@@ -2,22 +2,30 @@
 
 int main()
 {
-    float matriz[3][2];
-    int l, c;
+    float matriz[10][10];
+    int l, c, auxl, auxc;
     float f;
 
-    for (l = 0; l < 3; l++){
-    for (c = 0; c < 2; c++){
-    printf("\n matriz[%d][%d] = ", l, c);
-    scanf("%f", &matriz[l][c]);
-    }
+
+    printf("Determine o a quantidade de linhas da matriz (maximo = 10): ");
+    scanf("%d", &auxl);
+    printf("\n");
+    printf("Determine o a quantidade de colunas da matriz (maximo = 10): ");
+    scanf("%d", &auxc);
+    printf("\n");
+
+    for(l = 0; l < auxl; l++){
+        for(c = 0; c < auxc; c++){
+            printf("\n matriz[%d][%d] = ", l, c);
+            scanf("%f", &matriz[l][c]);
+        }
     }
 
     printf("\n");
     printf("MATRIZ:");
-    for (l = 0; l < 3; l++){
+    for (l = 0; l < auxl; l++){
         printf("\n");
-    for (c = 0; c < 2; c++){
+    for (c = 0; c < auxc; c++){
     printf("| %f |", matriz[l][c]);
     }
     }
@@ -25,12 +33,10 @@ int main()
     printf("\n");
     printf("MATRIZ TRANSPOSTA:");
 
-    for (l = 0; l < 2; l++){
+    for (l = 0; l < auxc; l++){
         printf("\n");
-    for (c = 0; c < 3; c++){
+    for (c = 0; c < auxl; c++){
     printf("| %f |", matriz[c][l]);
     }
     }
-
-
 }
